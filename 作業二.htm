@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 0px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <feildset>
+        <table style="width:100%">
+            <tr>
+                <th> <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">神經內科 初診表單</h1></th>
+
+            </tr>
+            
+                <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post" name="form1">
+                    <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <h2>基本資料</h2>
+                                <tr>
+                                    <td>
+                                        姓名: <input type="text" name="姓名" size="12 
+  ">
+                                    </td>
+                                    <td>
+                                        性別: <select name="性別">
+                                            <option value="男">男</option>
+                                            <option value="女">女</option>
+
+                                        </select>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td> 年齡: <input type="text" name="年齡" size="12"></td>
+                                    <td>
+                                        
+                                            慣用手: <input type="radio" name="慣用手" value="左手" checked> 左手
+                                            <input type="radio" name="慣用手" value="右手">右手
+                                    </td>
+
+
+                                </tr>
+                                <td>
+                                    地址: <input type="text" name="地址" size="12">
+                                </td>
+                                <td>
+                                    生日:
+                 
+                                    <input type="date" name="生日">
+                                    
+                                    
+                                </td>
+
+                                <tr>
+                                    <td>行動電話: <input type="text" name="行動電話" size="20"></td>
+                                    <td> 室內電話:<input type="text" name="室內電話" size="20"></td>
+
+
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="width:100%">
+                                <h2>過去醫療歷史</h2>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="抑鬱症">抑鬱症
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="過去醫療歷史1" value="哮喘">哮喘<br></td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史2" value="心房顫動">心房顫動
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史3" value="癌症">癌症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史4" value="腦腫瘤">腦腫瘤
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史5" value="自身免疫性疾病">自身免疫性疾病
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史6" value="甲狀腺疾病">甲狀腺疾病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史7" value="高血壓">高血壓
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史8" value="糖尿病">糖尿病
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史9" value="高膽固醇">高膽固醇
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史10" value="頭部受傷/創傷">頭部受傷/創傷
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史11" value="中風">中風
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史12" value="癲癇症">癲癇症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史13" value="腎功能衰竭">腎功能衰竭
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史14" value="多囊腎病">多囊腎病
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史15" value="周邊血管疾病">周邊血管疾病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史16" value="心臟病">心臟病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史17" value="腦膜炎">腦膜炎
+
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史18" value="肝炎">肝炎
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史19" value="周圍神經病變">周圍神經病變
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史20" value="偏頭痛">偏頭痛
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史21" value="憂鬱症">憂鬱症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史22" value="失智症">失智症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史23" value="其他">其他:
+                                        <input type="text" name="" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史24" value="無">無
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="width:100%">
+                                <h2>家庭醫療歷史</h2>
+                                <p>請說明是否有直系親屬患病</p>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史" value="老年癡呆症">老年癡呆症
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="家庭醫療歷史1" value="憂鬱症">憂鬱症<br></td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史2" value="高膽固醇">高膽固醇
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史3" value="腎功能衰竭">腎功能衰竭
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史4" value="帕金森氏症">帕金森氏症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史5" value="震顫/不自主運動">震顫/不自主運動
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史6" value="平衡問題">平衡問題
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史7" value="癌症">癌症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史8" value="冠狀動脈疾病<55歲">冠狀動脈疾病<55歲
+                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史9" value="糖尿病">糖尿病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史10" value="亨廷頓氏病">亨廷頓氏病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史11" value="出血性疾病">出血性疾病
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史12" value="高血壓">高血壓
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史13" value="偏頭痛">偏頭痛
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史14" value="多發性硬化症">多發性硬化症
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史15" value="重症肌無力">重症肌無力
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史16" value="心臟病">心臟病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史17" value="多囊腎病">多囊腎病
+
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史18" value="精神分裂症">精神分裂症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史19" value="中風<55歲">中風<55歲
+                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史20" value="周圍神經病變">周圍神經病變
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史21" value="周邊血管疾病">周邊血管疾病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史22" value="癲癇症">癲癇症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史23" >其他:
+                                        <input type="text" name="其他" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="家庭醫療歷史24" value="無">無
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="width:100%">
+                                <h2>個人身體狀況</h2>
+                                <tr>
+                                    <td>
+                                        抽菸: <select name="抽菸">
+                                            <option value="無">無</option>
+                                            <option value="偶爾">偶爾</option>
+                                            <option value="經常">經常</option>
+                                            <option value="每天">每天</option>
+                                        </select>
+                                            <br>
+                                        
+                                    </td>
+                                    <td>
+                                        酗酒: <select name="酗酒">
+                                            <option value="無">無</option>
+                                            <option value="偶爾">偶爾</option>
+                                            <option value="經常">經常</option>
+                                            <option value="每天">每天</option>
+                                        </select>
+                                             <br>
+
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況" value="憂鬱症">憂鬱症<br></td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況1" value="反覆感染">反覆感染
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況2" value="過敏">過敏
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況3" value="躁鬱症">躁鬱症
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況4" value="失禁">失禁
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況5" value="咳嗽">咳嗽
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況6" value="喪失記憶">喪失記憶
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況7" value="夜間尿頻">夜間尿頻
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況8" value="呼吸困難">呼吸困難
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況9" value="自殺念頭">自殺念頭
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況10" value="尿頻">尿頻
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況11" value="窒息">窒息
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況12" value="幻覺">幻覺
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況13" value="勃起功能障礙">勃起功能障礙
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況114" value="打鼾">打鼾
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況15" value="妄想症">妄想症
+                                        
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況16" value="皮疹">皮疹
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況17" value="出汗過多">出汗過多
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況18" value="周圍神經病變">周圍神經病變
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況19" value="幻聽">幻聽
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況20" value="便秘">便秘
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況21" value="發燒">發燒
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況22" value="聽力衰退">聽力衰退
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況23" value="腹瀉">腹瀉
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況24" value="厭食症">厭食症<br></td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況25" value="流鼻血">流鼻血
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況226" value="嘔吐">嘔吐<br></td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況27" value="盜汗">盜汗
+                                        <br>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況28" value="暫時性失明">暫時性失明
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況29" value="噁心">噁心<br></td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況30" value="體重快速下降">體重快速下降
+                                        <br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況31" value="頭暈（眩暈）">頭暈（眩暈）
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況32" value="腹痛">腹痛<br></td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況33" value="疲勞">疲勞
+                                        <br>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況34" value="癲癇發作">癲癇發作
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況35" value="食慾不振">食慾不振<br></td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況36" value="發冷">發冷
+                                        <br>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況37" value="感覺異常/麻木">感覺異常/麻木
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況38" value="大聲打鼾">大聲打鼾<br></td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況39" value="難以集中注意力">難以集中注意力
+                                        <br>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況40" value="肢體無力">肢體無力
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況41" value="過度疲倦">過度疲倦<br></td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況42" value="經常跌倒">經常跌倒
+                                        <br>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況43" value="眼睛疼痛">眼睛疼痛
+                                        <br>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況44" value="暈厥">暈厥
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況45" value="肌肉痙攣">肌肉痙攣
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況46" value="視力下降">視力下降
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況47" value="心悸">心悸
+                                        <br>
+                                    </td>
+                                    <td><input type="checkbox" name="個人身體狀況48" value="關節疼痛">關節疼痛<br></td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況49" value="視力模糊">視力模糊
+                                        <br>
+                                    <td>
+                                        <input type="checkbox" name="個人身體狀況50" value="胸痛">胸痛
+                                        <br>
+                                    </td>
+                        </td>
+                        <td><input type="checkbox" name="個人身體狀況51" value="關節腫脹">關節腫脹<br></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="個人身體狀況52" value="昏厥（暈厥）">昏厥（暈厥）
+                            <br>
+                        </td>
+                        <td><input type="checkbox" name="個人身體狀況53" value="經常頭痛">經常頭痛<br></td>
+                        
+                        <td><input type="checkbox" name="個人身體狀況54" value="頸部疼痛">頸部疼痛<br></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="個人身體狀況55" value="吞嚥困難">吞嚥困難<br></td>
+                        
+                        <td>
+                            <input type="checkbox" name="個人身體狀況56" value="肌肉無力">肌肉無力
+                            <br>
+                        </td>
+                        <td><input type="checkbox" name="個人身體狀況57" value="背痛">背痛<br></td>
+                    </tr>
+</table>
+        </td>
+
+        </tr>
+
+
+
+        </table>
+
+
+        <button type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
+        </form>
+        </fieldset>
+</body>
+</html>

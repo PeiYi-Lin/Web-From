@@ -15,12 +15,9 @@
         }
     </style>
 </head>
-<body>
+<body onload="Button4_onclick()">
     <script language="javascript" type="text/javascript">
-
-
         function Button1_onclick() {
-
             var a = document.getElementById("py1").value;
             var b = document.getElementById("py2").value;
             var c = document.getElementById("py3").value;
@@ -33,15 +30,11 @@
             }
             if (isNaN(c) == false) {
                 alert("行動電話不是數字");
-
             }
             if (isNaN(e) == false) {
                 alert("室內電話不是數字");
-
             }
-
         }
-
         function Button2_onclick() {
             var patient = {
                 "name": "Chalmers", "celltelecom": "0912345678", "gender": "male", "birthDate": "1974-12-25", "telecom": "12345678"
@@ -68,11 +61,6 @@
             var d = document.getElementById("py6").value;
             alert("姓名:" + a + ",行動電話:" + b + ",生日:" + c + ",性別:" + d + ",市內電話:" + e);
         }
-
-
-
-
-
     </script>
 
     <script>
@@ -129,12 +117,20 @@
   ">
                                     </td>
                                     <td>
-                                        性別: <select id="py6" name="性別">
-                                            <option value="男">男</option>
-                                            <option value="女">女</option>
-
-                                        </select>
+                                        性別: <select id="py6" name="性別"> </select>
                                     </td>
+                                    <script>
+
+                                        function Button4_onclick() {
+                                            var a = new Array("男", "女");
+                                            var y = document.getElementById("py6")
+                                            for (i = 0; i < a.length; i++) {
+                                                var option = document.createElement("option");
+                                                option.text = a[i];
+                                                y.add(option);
+                                            }
+                                        }
+                                    </script>
 
                                 </tr>
                                 <tr>
@@ -144,14 +140,9 @@
                                         慣用手: <input type="radio" name="慣用手" value="左手" checked> 左手
                                         <input type="radio" name="慣用手" value="右手">右手
                                     </td>
-                                </tr>
 
-                                <tr>
-                                    <td> 身高: <input type="text" name="身高" size="12"></td>
-                                    <td> 體重: <input type="text" name="體重" size="12"></td>
 
                                 </tr>
-
                                 <tr>
                                     <td>
                                         地址: <input type="text" name="地址" size="12">
@@ -159,7 +150,7 @@
                                     <td>
                                         生日:
 
-                                        <input id="py4" type="text" name="生日" size="12">
+                                        <input id="py4" type="date" name="生日">
                                     </td>
                                 </tr>
                                 <tr>
@@ -172,9 +163,6 @@
                             <button type="button" onclick="Button2_onclick()">給值</button>
                             <button type="button" onclick="Button3_onclick()">呈現</button>
                         </td>
-
-                    </tr>
-
                     <tr>
                         <td>
                             <table>
@@ -188,7 +176,8 @@
                                     <td>你的理想體重:<input type="text" name="IW"></td>
                                     <td>你的BMI:<input type="text" name="BMI"></td>
                                 </tr>
-                                <tr><td><input type="button" value="開始計算" onclick="Cal(this.form)"></td>
+                                <tr>
+                                    <td><input type="button" value="開始計算" onclick="Cal(this.form)"></td>
                                 </tr>
 
                             </table>
@@ -196,6 +185,7 @@
 
                     </tr>
 
+                    </tr>
                     <tr>
                         <td>
                             <table style="width:100%">

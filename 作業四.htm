@@ -61,6 +61,15 @@
             var d = document.getElementById("py6").value;
             alert("姓名:" + a + ",行動電話:" + b + ",生日:" + c + ",性別:" + d + ",市內電話:" + e);
         }
+        function Button5_onclick() {
+            var a = document.getElementsByName("過去醫療歷史");
+            var y = new Array();
+            for (i = 0; i < 24; i++) {
+                if (a[i].checked == true)
+                    y += a[i].value;
+            }
+            alert(y)
+        }
     </script>
 
     <script>
@@ -188,121 +197,124 @@
                     </tr>
                     <tr>
                         <td>
+                            
+                            <button type="button" onclick="Button5_onclick()">check</button>
                             <table style="width:100%">
+
                                 <h2>過去醫療歷史</h2>
                                 <tr>
                                     <td>
                                         <input type="checkbox" name="過去醫療歷史" value="抑鬱症">抑鬱症
                                         <br>
                                     </td>
-                                    <td><input type="checkbox" name="過去醫療歷史1" value="哮喘">哮喘<br></td>
+                                    <td><input type="checkbox" name="過去醫療歷史" value="哮喘">哮喘<br></td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史2" value="心房顫動">心房顫動
+                                        <input type="checkbox" name="過去醫療歷史" value="心房顫動">心房顫動
                                         <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史3" value="癌症">癌症
+                                        <input type="checkbox" name="過去醫療歷史" value="癌症">癌症
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史4" value="腦腫瘤">腦腫瘤
+                                        <input type="checkbox" name="過去醫療歷史" value="腦腫瘤">腦腫瘤
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史5" value="自身免疫性疾病">自身免疫性疾病
-                                        <br>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="過去醫療歷史6" value="甲狀腺疾病">甲狀腺疾病
-                                        <br>
-                                    </td>
-                                    <td>
-                                        <input type="checkbox" name="過去醫療歷史7" value="高血壓">高血壓
-                                        <br>
-                                    </td>
-                                    <td>
-                                        <input type="checkbox" name="過去醫療歷史8" value="糖尿病">糖尿病
+                                        <input type="checkbox" name="過去醫療歷史" value="自身免疫性疾病">自身免疫性疾病
                                         <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史9" value="高膽固醇">高膽固醇
+                                        <input type="checkbox" name="過去醫療歷史" value="甲狀腺疾病">甲狀腺疾病
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史10" value="頭部受傷/創傷">頭部受傷/創傷
+                                        <input type="checkbox" name="過去醫療歷史" value="高血壓">高血壓
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史11" value="中風">中風
-                                        <br>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="過去醫療歷史12" value="癲癇症">癲癇症
-                                        <br>
-                                    </td>
-                                    <td>
-                                        <input type="checkbox" name="過去醫療歷史13" value="腎功能衰竭">腎功能衰竭
-                                        <br>
-                                    </td>
-                                    <td>
-                                        <input type="checkbox" name="過去醫療歷史14" value="多囊腎病">多囊腎病
+                                        <input type="checkbox" name="過去醫療歷史" value="糖尿病">糖尿病
                                         <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史15" value="周邊血管疾病">周邊血管疾病
+                                        <input type="checkbox" name="過去醫療歷史" value="高膽固醇">高膽固醇
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史16" value="心臟病">心臟病
+                                        <input type="checkbox" name="過去醫療歷史" value="頭部受傷/創傷">頭部受傷/創傷
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史17" value="腦膜炎">腦膜炎
+                                        <input type="checkbox" name="過去醫療歷史" value="中風">中風
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="癲癇症">癲癇症
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="腎功能衰竭">腎功能衰竭
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="多囊腎病">多囊腎病
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="周邊血管疾病">周邊血管疾病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="心臟病">心臟病
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="過去醫療歷史" value="腦膜炎">腦膜炎
 
                                         <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史18" value="肝炎">肝炎
+                                        <input type="checkbox" name="過去醫療歷史" value="肝炎">肝炎
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史19" value="周圍神經病變">周圍神經病變
+                                        <input type="checkbox" name="過去醫療歷史" value="周圍神經病變">周圍神經病變
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史20" value="偏頭痛">偏頭痛
+                                        <input type="checkbox" name="過去醫療歷史" value="偏頭痛">偏頭痛
                                         <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史21" value="憂鬱症">憂鬱症
+                                        <input type="checkbox" name="過去醫療歷史" value="憂鬱症">憂鬱症
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史22" value="失智症">失智症
+                                        <input type="checkbox" name="過去醫療歷史" value="失智症">失智症
                                         <br>
                                     </td>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史23" value="其他">其他:
+                                        <input type="checkbox" name="過去醫療歷史" value="其他">其他:
                                         <input type="text" name="" value="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" name="過去醫療歷史24" value="無">無
+                                        <input type="checkbox" name="過去醫療歷史" value="無">無
                                         <br>
                                     </td>
                                 </tr>
@@ -585,7 +597,7 @@
                                         <input type="checkbox" name="個人身體狀況25" value="流鼻血">流鼻血
                                         <br>
                                     </td>
-                                    <td><input type="checkbox" name="個人身體狀況226" value="嘔吐">嘔吐<br></td>
+                                    <td><input type="checkbox" name="個人身體狀況26" value="嘔吐">嘔吐<br></td>
                                     <td>
                                         <input type="checkbox" name="個人身體狀況27" value="盜汗">盜汗
                                         <br>

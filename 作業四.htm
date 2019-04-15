@@ -61,16 +61,48 @@
             var d = document.getElementById("py6").value;
             alert("姓名:" + a + ",行動電話:" + b + ",生日:" + c + ",性別:" + d + ",市內電話:" + e);
         }
-        function Button5_onclick() {
+
+
+        function showData() {
+            // alert(ret);
+            // ret defined in HTTP2019.js for keep the response value
+            //var myObj = JSON.parse(ret);
+            //  alert(myObj.length);
             var a = document.getElementsByName("過去醫療歷史");
             var y = new Array();
+            var n = 0;
             for (i = 0; i < 24; i++) {
                 if (a[i].checked == true)
-                    y += a[i].value;
+                    y[n] = a[i].value;
+                     n++;
             }
             alert(y)
+            //  var obj = JSON.parse('{"抑鬱症""哮喘""心房顫動""癌症""腦腫瘤""自身免疫性疾病""甲狀腺疾病""高血壓""糖尿病""高膽固醇""頭部受傷/創傷""中風""癲癇症""腎功能衰竭""多囊腎病""周邊血管疾病""心臟病""腦膜炎""肝炎""周圍神經病變""偏頭痛""憂鬱症""失智症""其他:""無": ""}');
+            var tableStr = "<tr><th>抑鬱症</th><th >哮喘</th><th >心房顫動</th><th >癌症</th><th >腦腫瘤</th><th >自身免疫性疾病</th><th >甲狀腺疾病</th><th >高血壓</th><th >糖尿病</th><th >高膽固醇</th><th >頭部受傷/創傷</th><th >中風</th><th >癲癇症</th><th >腎功能衰竭</th><th >多囊腎病</th><th >周邊血管疾病</th><th >心臟病</th><th >腦膜炎</th><th >肝炎</th><th >周圍神經病變</th><th >偏頭痛</th><th >憂鬱症</th><th >失智症</th><th >其他</th><th>無</th></tr>";
+
+            for (i = 0; i < 24; i++) {
+                // alert(myObj[i].name);
+                var trStr = "<tr>";
+
+
+                trStr = trStr + "<td>";
+                trStr = trStr + y[i];
+                trStr = trStr + "</td>";
+              
+
+                trStr = trStr + "</tr>";
+                tableStr = tableStr + trStr;
+            }
+
+            // 表格字串字串在id為"t1"的"table"標簽内
+            document.getElementById("t1").innerHTML = tableStr;
+
+
         }
+
     </script>
+
+    
 
     <script>
         var BMI = {};
@@ -197,8 +229,7 @@
                     </tr>
                     <tr>
                         <td>
-                            
-                            <button type="button" onclick="Button5_onclick()">check</button>
+
                             <table style="width:100%">
 
                                 <h2>過去醫療歷史</h2>
@@ -733,6 +764,8 @@
 
         </table>
 
+        <p><input id="Button2" onclick="showData();" type="button" value="ShowData" /></p>
+        <table id="t1" />
         <button type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
         </form>
         </fieldset>
